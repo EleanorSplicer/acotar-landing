@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🌹ACOTAR📕</title>
+  </head>
+  <style>
+    nav {
+      width: 100%;
+    }
+    body {
+      background: linear-gradient(
+        118.4deg,
+        rgb(111, 21, 39) 27.5%,
+        rgb(62, 9, 27) 92.7%
+      );
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 10px 50px;
+      padding: 50px;
+    }
+    h1 {
+      text-align: center;
+      line-height: 50%;
+    }
+    h2 {
+      text-align: center;
+    }
+    h4 {
+      text-align: center;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      border-radius: 4px;
+    }
+    p {
+      text-align: center;
+      line-height: 1.5;
+      margin: 10px 50px;
+      padding: 0 auto;
+    }
+    button {
+      display: block;
+      margin: 0 auto;
+      padding: 15px 20px;
+      font-size: medium;
+      background: #900048;
+      border: 1px solid rgb(111, 21, 39);
+      border-radius: 6px;
+      border-color: #900048;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      transform: all 200ms ease-in-out;
+    }
+    a {
+      color: gray;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: antiquewhite;
+    }
+    button:hover {
+      background: rgb(111, 21, 39);
+      cursor: pointer;
+    }
+    .learn-more {
+      text-align: center;
+    }
+    .footer {
+      text-align: center;
+    }
+    .container {
+      width: 100%;
+      margin: 0 auto;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>A Court of Thorns and Roses</h1>
+      <h2>By Sarah J. Mass</h2>
+      <hr />
+      <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/792/original/a9aadd1ea523f744f91189949f6ff5a4.jpg?1685416584"
+      alt"Book" />
+      <hr />
+      <p>
+        When nineteen-year-old huntress <strong>Feyre</strong> kills a wolf in
+        the woods, a beast-like creature arrives to demand retribution for it.
+        Dragged to a treacherous magical land she only knows about from legends,
+        <strong>Feyre</strong> discovers that her captor is not an animal, but
+        Tamlin—one of the lethal, immortal faeries who once ruled their world.
+        But an ancient, wicked shadow over the faerie lands is growing, and
+        <strong>Feyre</strong> must find a way to stop it…or
+        <em>doom Tamlin—and his world—forever.</em>
+      </p>
+      <h4>
+        Learn more at
+        <a
+          href="https://sarahjmaas.com/books/a-court-of-thorns-and-roses-series/a-court-of-thorns-and-roses/"
+          target="_blank"
+          class="learn-more"
+          >Sarah J. Maas' Website</a
+        >
+      </h4>
+
+      <button class="buy-book">Buy Book! 📕</button>
+      <p class="footer">This page was built by Kimberly Duvall 👩🏻‍💻</p>
+      <script>
+        function buyACOTAR() {
+          let name = prompt("What is your name?");
+          let book = prompt("What is your favorite book 📖?");
+          let acotar = prompt("Have you read A Court of Thorns and Roses?");
+
+          if (acotar.length > 0) {
+            alert(
+              "Thank you, " +
+                name +
+                " I hope you enjoy A Court of Thorn and Roses 🌹!"
+            );
+          } else {
+            alert(
+              "Thank you, " + name + " I hope you find a book you like 📚!"
+            );
+          }
+        }
+
+        let buyBook = document.querySelector("button");
+        buyBook.addEventListener("click", buyACOTAR);
+      </script>
+    </div>
+  </body>
+</html>
